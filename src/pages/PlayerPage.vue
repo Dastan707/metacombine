@@ -5,7 +5,7 @@
         <PlayerInfo />
       </div>
       <div style="width: 1100px">
-        <div style="height: 350px"></div>
+        <div style="height: 275px"></div>
         <div class="q-px-md">
         <GamesList />
         </div>
