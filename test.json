@@ -1,0 +1,134 @@
+{
+    "player": {
+      "nickname": "Player_001",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs2n6PENGM13eYGsFmmydGorRRtHysX4Pa7g&usqp=CAU",
+      "discord_nickname": "WhaleMC#0000",
+      "devices": ["PC", "Android"],
+      "description": "Player short bio info Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, atque!",
+      "skills": ["Player", "Coach", "NFT artist"],
+      "state": ["Renting out NFT", "Coach"],
+      "guild": "Nova Guild Games"
+    },
+    "experience": [
+      {"game": "Axie Infinity", "img": "img", "playing_time": "2 months played"},
+      {"game": "The Sandbox", "img": "img", "playing_time": "2 years playing"}
+    ],
+    "games": [
+      {
+        "name": "Axie Infinity",
+        "stats": [
+          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+          {"title": "Number of NFT", "num": "11", "status": "negative"},
+          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+          {"title": "In-game token", "num": "1850", "status": "positive"},
+          {"title": "Ranking", "num": "63", "status": "negative"},
+          {"title": "Hours played", "num": "758", "status": "positive"}
+        ]    
+      },
+      {
+        "name": "Axie Infinity",
+        "stats": [
+          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+          {"title": "Number of NFT", "num": "11", "status": "negative"},
+          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+          {"title": "In-game token", "num": "1850", "status": "positive"},
+          {"title": "Ranking", "num": "63", "status": "negative"},
+          {"title": "Hours played", "num": "758", "status": "positive"}
+        ]    
+      },
+      {
+        "name": "Axie Infinity",
+        "stats": [
+          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+          {"title": "Number of NFT", "num": "11", "status": "negative"},
+          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+          {"title": "In-game token", "num": "1850", "status": "positive"},
+          {"title": "Ranking", "num": "63", "status": "negative"},
+          {"title": "Hours played", "num": "758", "status": "positive"}
+        ]    
+      },
+      {
+        "name": "Axie Infinity",
+        "stats": [
+          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+          {"title": "Number of NFT", "num": "11", "status": "negative"},
+          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+          {"title": "In-game token", "num": "1850", "status": "positive"},
+          {"title": "Ranking", "num": "63", "status": "negative"},
+          {"title": "Hours played", "num": "758", "status": "positive"}
+        ]    
+      },
+      {
+        "name": "Axie Infinity",
+        "stats": [
+          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+          {"title": "Number of NFT", "num": "11", "status": "negative"},
+          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+          {"title": "In-game token", "num": "1850", "status": "positive"},
+          {"title": "Ranking", "num": "63", "status": "negative"},
+          {"title": "Hours played", "num": "758", "status": "positive"}
+        ]    
+      },
+      {
+        "name": "Axie Infinity",
+        "stats": [
+          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+          {"title": "Number of NFT", "num": "11", "status": "negative"},
+          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+          {"title": "In-game token", "num": "1850", "status": "positive"},
+          {"title": "Ranking", "num": "63", "status": "negative"},
+          {"title": "Hours played", "num": "758", "status": "positive"}
+        ]    
+      },
+      {
+          "name": "Splinter Lands",
+          "stats": [
+              {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+              {"title": "Number of NFT", "num": "11", "status": "negative"},
+              {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+              {"title": "In-game token", "num": "1850", "status": "positive"},
+              {"title": "Ranking", "num": "63", "status": "negative"},
+              {"title": "Hours played", "num": "758", "status": "positive"}
+          ]    
+      },
+      {
+          "name": "The Sandbox",
+          "stats": [
+              {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+              {"title": "Number of NFT", "num": "11", "status": "negative"},
+              {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+              {"title": "In-game token", "num": "1850", "status": "positive"},
+              {"title": "Ranking", "num": "63", "status": "negative"},
+              {"title": "Hours played", "num": "758", "status": "positive"}
+          ]    
+      },
+      {
+        "name": "The Sandbox",
+        "stats": [
+            {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+            {"title": "Number of NFT", "num": "11", "status": "negative"},
+            {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+            {"title": "In-game token", "num": "1850", "status": "positive"},
+            {"title": "Ranking", "num": "63", "status": "negative"},
+            {"title": "Hours played", "num": "758", "status": "positive"}
+        ]    
+    }
+    ],
+    "guild": {
+      "name": "Nova Guild Games",
+      "description": "Your Gateway to the Metaverse!",
+      "games": [
+        {"title": "Axie Infinity"},
+        {"title": "The Sandbox"},
+        {"title": "League Of Kingdoms"}
+      ],
+      "unique_features": [
+        {"type": "Market place", "url": "https://novaguild.io"},
+        {"type": "Launchpad", "url": "https://novaguild.io"},
+        {"type": "Platform", "url": "https://novaguild.io"}
+      ],
+      "languages": ["EN", "SPN", "RUS"],
+      "searching_for": ["scholars", "coach", "streamers", "testers", "video creators"],
+      "special_activities": ["marketing", "investment", "research", "testing"]
+    }
+  }
