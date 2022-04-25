@@ -15,7 +15,7 @@
 
 <div class="games-list" :style="{ 'margin-left': '-' + (150 * currentSlideIndex) + 'px'}">
 <q-card class="games-card no-shadow" v-for="game in games" :key="game.id">
-    <img src="../assets/card-img.svg" alt="game">
+    <img src="../../assets/card-img.svg" alt="game">
     <q-card-section>
       <div class="text-h5">
           <q-btn :label="game.name" style="width: 100%" color="primary" />
@@ -36,11 +36,10 @@
   <q-card-section>
     <div class="text-h5 row justify-center">Список всех игр</div>
   </q-card-section>
-
   <q-card-section class="q-pt-none">
   <div class="row justify-between">
   <q-card class="games-card no-shadow q-mb-md" v-for="game in games" :key="game.id">
-    <img src="../assets/card-img.svg" alt="game">
+    <img src="../../assets/card-img.svg" alt="game">
     <q-card-section>
       <div class="text-h5">
           <q-btn :label="game.name" style="width: 100%" color="primary" />
@@ -52,25 +51,21 @@
           <q-btn :label="item.num" size="11px" color="primary" outline class="q-mb-sm"/>
       </div>
     </q-card-section>
-</q-card>
-</div>
+  </q-card>
+  </div>
   </q-card-section>
-
   <q-card-actions align="center">
     <q-btn label="Close" color="primary" style="width: 20%" v-close-popup />
   </q-card-actions>
   </q-card>
 </q-dialog>
-<div>
 </div>
-</div>
-
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 export default {
   name: 'GamesCard',
+  props: ['games'],
   data () {
     return {
       currentSlideIndex: 0,
@@ -93,11 +88,6 @@ export default {
     openModal () {
       this.showModal = true
     }
-  },
-  computed: {
-    ...mapGetters({
-      games: 'games'
-    })
   }
 }
 </script>

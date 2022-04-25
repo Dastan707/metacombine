@@ -16,7 +16,7 @@
           <router-link to="/games">
             Games
           </router-link>
-          <router-link to="/games">
+          <router-link to="/guild">
             Guilds
           </router-link>
         </div>

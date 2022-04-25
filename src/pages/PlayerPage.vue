@@ -4,10 +4,10 @@
       <div>
         <PlayerInfo />
       </div>
-      <div style="width: 1100px">
+      <div class="q-px-md" style="width: 1100px">
         <div style="height: 275px"></div>
-        <div class="q-px-md">
-        <GamesList />
+        <div>
+        <PlayerGames :games="player.games" />
         </div>
         <div>
           <NftList />
@@ -18,21 +18,20 @@
 </template>
 
 <script>
-import PlayerInfo from 'src/components/PlayerInfo.vue'
-import GamesList from 'src/components/GamesList.vue'
+import PlayerInfo from 'src/components/Player/PlayerInfo.vue'
+import PlayerGames from 'src/components/Player/PlayerGames.vue'
+import NftList from 'src/components/Player/NftList.vue'
 import { mapGetters } from 'vuex'
-import NftList from 'src/components/NftList.vue'
 export default {
-  components: { PlayerInfo, GamesList, NftList },
+  components: { PlayerInfo, PlayerGames, NftList },
   name: 'PlayerPage',
   computed: {
     ...mapGetters({
-      games: 'games'
+      player: 'player'
     })
   },
   mounted () {
     this.$store.dispatch('getPlayerInfo')
-    this.$store.dispatch('getGamesInfo')
   }
 }
 </script>

@@ -63,7 +63,7 @@
     </q-card-section>
 
     <div class="q-mt-lg">
-      <img src="../assets/novaImg.svg" alt="nova">
+      <img src="../../assets/novaImg.svg" alt="nova">
     </div>
 </q-card>
 </template>
@@ -87,7 +87,6 @@ export default {
 
 <style lang="scss" scoped>
 .my-card{
-    width: 100%;
     width: 250px;
     height: 700px;
 }

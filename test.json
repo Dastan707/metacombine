@@ -7,91 +7,97 @@
       "description": "Player short bio info Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, atque!",
       "skills": ["Player", "Coach", "NFT artist"],
       "state": ["Renting out NFT", "Coach"],
-      "guild": "Nova Guild Games"
-    },
-    "experience": [
-      {"game": "Axie Infinity", "img": "img", "playing_time": "2 months played"},
-      {"game": "The Sandbox", "img": "img", "playing_time": "2 years playing"}
-    ],
-    "games": [
-      {
-        "name": "Axie Infinity",
-        "stats": [
-          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
-          {"title": "Number of NFT", "num": "11", "status": "negative"},
-          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
-          {"title": "In-game token", "num": "1850", "status": "positive"},
-          {"title": "Ranking", "num": "63", "status": "negative"},
-          {"title": "Hours played", "num": "758", "status": "positive"}
-        ]    
-      },
-      {
-        "name": "Axie Infinity",
-        "stats": [
-          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
-          {"title": "Number of NFT", "num": "11", "status": "negative"},
-          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
-          {"title": "In-game token", "num": "1850", "status": "positive"},
-          {"title": "Ranking", "num": "63", "status": "negative"},
-          {"title": "Hours played", "num": "758", "status": "positive"}
-        ]    
-      },
-      {
-        "name": "Axie Infinity",
-        "stats": [
-          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
-          {"title": "Number of NFT", "num": "11", "status": "negative"},
-          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
-          {"title": "In-game token", "num": "1850", "status": "positive"},
-          {"title": "Ranking", "num": "63", "status": "negative"},
-          {"title": "Hours played", "num": "758", "status": "positive"}
-        ]    
-      },
-      {
-        "name": "Axie Infinity",
-        "stats": [
-          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
-          {"title": "Number of NFT", "num": "11", "status": "negative"},
-          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
-          {"title": "In-game token", "num": "1850", "status": "positive"},
-          {"title": "Ranking", "num": "63", "status": "negative"},
-          {"title": "Hours played", "num": "758", "status": "positive"}
-        ]    
-      },
-      {
-        "name": "Axie Infinity",
-        "stats": [
-          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
-          {"title": "Number of NFT", "num": "11", "status": "negative"},
-          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
-          {"title": "In-game token", "num": "1850", "status": "positive"},
-          {"title": "Ranking", "num": "63", "status": "negative"},
-          {"title": "Hours played", "num": "758", "status": "positive"}
-        ]    
-      },
-      {
-        "name": "Axie Infinity",
-        "stats": [
-          {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
-          {"title": "Number of NFT", "num": "11", "status": "negative"},
-          {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
-          {"title": "In-game token", "num": "1850", "status": "positive"},
-          {"title": "Ranking", "num": "63", "status": "negative"},
-          {"title": "Hours played", "num": "758", "status": "positive"}
-        ]    
-      },
-      {
-          "name": "Splinter Lands",
+      "guild": "Nova Guild Games",
+      "games": [
+        {
+          "name": "Axie Infinity",
           "stats": [
-              {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
-              {"title": "Number of NFT", "num": "11", "status": "negative"},
-              {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
-              {"title": "In-game token", "num": "1850", "status": "positive"},
-              {"title": "Ranking", "num": "63", "status": "negative"},
-              {"title": "Hours played", "num": "758", "status": "positive"}
+            {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+            {"title": "Number of NFT", "num": "11", "status": "negative"},
+            {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+            {"title": "In-game token", "num": "1850", "status": "positive"},
+            {"title": "Ranking", "num": "63", "status": "negative"},
+            {"title": "Hours played", "num": "758", "status": "positive"}
           ]    
-      },
-      {
+        },
+        {
+          "name": "Axie Infinity",
+          "stats": [
+            {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+            {"title": "Number of NFT", "num": "11", "status": "negative"},
+            {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+            {"title": "In-game token", "num": "1850", "status": "positive"},
+            {"title": "Ranking", "num": "63", "status": "negative"},
+            {"title": "Hours played", "num": "758", "status": "positive"}
+          ]    
+        },
+        {
+          "name": "Axie Infinity",
+          "stats": [
+            {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+            {"title": "Number of NFT", "num": "11", "status": "negative"},
+            {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+            {"title": "In-game token", "num": "1850", "status": "positive"},
+            {"title": "Ranking", "num": "63", "status": "negative"},
+            {"title": "Hours played", "num": "758", "status": "positive"}
+          ]    
+        },
+        {
+          "name": "Axie Infinity",
+          "stats": [
+            {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+            {"title": "Number of NFT", "num": "11", "status": "negative"},
+            {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+            {"title": "In-game token", "num": "1850", "status": "positive"},
+            {"title": "Ranking", "num": "63", "status": "negative"},
+            {"title": "Hours played", "num": "758", "status": "positive"}
+          ]    
+        },
+        {
+          "name": "Axie Infinity",
+          "stats": [
+            {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+            {"title": "Number of NFT", "num": "11", "status": "negative"},
+            {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+            {"title": "In-game token", "num": "1850", "status": "positive"},
+            {"title": "Ranking", "num": "63", "status": "negative"},
+            {"title": "Hours played", "num": "758", "status": "positive"}
+          ]    
+        },
+        {
+          "name": "Axie Infinity",
+          "stats": [
+            {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+            {"title": "Number of NFT", "num": "11", "status": "negative"},
+            {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+            {"title": "In-game token", "num": "1850", "status": "positive"},
+            {"title": "Ranking", "num": "63", "status": "negative"},
+            {"title": "Hours played", "num": "758", "status": "positive"}
+          ]    
+        },
+        {
+            "name": "Splinter Lands",
+            "stats": [
+                {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+                {"title": "Number of NFT", "num": "11", "status": "negative"},
+                {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+                {"title": "In-game token", "num": "1850", "status": "positive"},
+                {"title": "Ranking", "num": "63", "status": "negative"},
+                {"title": "Hours played", "num": "758", "status": "positive"}
+            ]    
+        },
+        {
+            "name": "The Sandbox",
+            "stats": [
+                {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
+                {"title": "Number of NFT", "num": "11", "status": "negative"},
+                {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
+                {"title": "In-game token", "num": "1850", "status": "positive"},
+                {"title": "Ranking", "num": "63", "status": "negative"},
+                {"title": "Hours played", "num": "758", "status": "positive"}
+            ]    
+        },
+        {
           "name": "The Sandbox",
           "stats": [
               {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
@@ -101,23 +107,23 @@
               {"title": "Ranking", "num": "63", "status": "negative"},
               {"title": "Hours played", "num": "758", "status": "positive"}
           ]    
-      },
-      {
-        "name": "The Sandbox",
-        "stats": [
-            {"title": "Earnings", "num": "$ 1200.00", "status": "positive"},
-            {"title": "Number of NFT", "num": "11", "status": "negative"},
-            {"title": "NFT total price", "num": "$ 3400.00", "status": "negative"},
-            {"title": "In-game token", "num": "1850", "status": "positive"},
-            {"title": "Ranking", "num": "63", "status": "negative"},
-            {"title": "Hours played", "num": "758", "status": "positive"}
-        ]    
-    }
+      }
+      ]
+    },
+    "experience": [
+      {"game": "Axie Infinity", "img": "img", "playing_time": "2 months played"},
+      {"game": "The Sandbox", "img": "img", "playing_time": "2 years playing"}
     ],
     "guild": {
       "name": "Nova Guild Games",
       "description": "Your Gateway to the Metaverse!",
       "games": [
+        {"title": "Axie Infinity"},
+        {"title": "The Sandbox"},
+        {"title": "League Of Kingdoms"},
+        {"title": "Axie Infinity"},
+        {"title": "The Sandbox"},
+        {"title": "League Of Kingdoms"},
         {"title": "Axie Infinity"},
         {"title": "The Sandbox"},
         {"title": "League Of Kingdoms"}
@@ -130,5 +136,14 @@
       "languages": ["EN", "SPN", "RUS"],
       "searching_for": ["scholars", "coach", "streamers", "testers", "video creators"],
       "special_activities": ["marketing", "investment", "research", "testing"]
+    },
+    "game": {
+      "name": "Axie Infinity",
+      "description": "Short descripton lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.",
+      "category": ["Card game", "Strategy"],
+      "status": ["F2E", "P2E", "NFT"],
+      "pc_requirements": ["You must have a processor intended to support SSE2 instructions.","Graphics card with Pixel Shader version 4.0 (DX 10) or higher version.","Minimum a few 600 MB free on storage from the hard drive.","Windows XP does not support Directx 10 (DX 10), so Axie Infinity cannot be played in this Windows version. It must be on Windows 7 or higher.","Minimum 2 GB of RAM memory."],
+      "smartphone_requirements": ["The operating system must be iOS or Android, because otherwise it will not allow us to play Axie.","The version of the mobile operating system must be at least iOS 6 or Android 4.1.","The smartphone must have at least 100MB of free storage."],
+      "searching_for": ["scholars", "coach", "streamers", "testers", "video creators"]
     }
   }

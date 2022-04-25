@@ -14,7 +14,7 @@
 
 <div class="nft-list" :style="{ 'margin-left': '-' + (150 * currentSlideIndex) + 'px'}">
 <q-card class="nft-card no-shadow" v-for="nft in userNft" :key="nft.id">
-    <img style="width: 170px" src="../assets/nft.svg" alt="nft">
+    <img style="width: 170px" src="../../assets/nft.svg" alt="nft">
 </q-card>
 </div>
 </div>
@@ -28,7 +28,7 @@
   <q-card-section class="q-pt-none">
   <div class="row wrap justify-between q-mx-auto">
   <q-card class="nft-card no-shadow q-mb-md" v-for="nft in userNft" :key="nft.id">
-    <img src="../assets/nft.svg" alt="game">
+    <img src="../../assets/nft.svg" alt="game">
   </q-card>
   </div>
   </q-card-section>
