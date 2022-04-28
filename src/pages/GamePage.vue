@@ -3,21 +3,25 @@
   <div class="q-mt-sm">
     <GameCarousel />
   </div>
-  <div class="row items-start justify-around q-mt-md">
-    <div>
+  <div class="row justify-between q-mt-md">
+    <div class="col col-md-auto">
       <GameCard :game="game" />
     </div>
-    <div class="q-ml-lg">
-      <div class="text-h5 q-mb-sm">Techical Requirements</div>
-      <div>
-        <GameRequirements
-          :pc_requirements="game.pc_requirements"
-          :smartphone_requirements="game.smartphone_requirements"
-        />
+    <div class="row">
+      <div class="col">
+        <div class="text-h5 q-mb-sm">Techical Requirements</div>
+        <div>
+          <GameRequirements
+            :pc_requirements="game.pc_requirements"
+            :smartphone_requirements="game.smartphone_requirements"
+          />
+        </div>
       </div>
     </div>
-    <div class="q-ml-lg">
-      <GameInfo :searching_for="game.searching_for" />
+    <div class="row">
+      <div class="col">
+        <GameInfo :searching_for="game.searching_for" />
+      </div>
     </div>
   </div>
 </div>

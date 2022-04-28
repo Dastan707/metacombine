@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="row no-wrap">
-      <div class="q-mt-sm" style="width: 1100px">
+      <div class="q-mt-sm col-9">
         <div>
           <GuildCarousel />
         </div>
@@ -12,11 +12,11 @@
             <q-btn label="70/30 Profit sharing" color="secondary" class="stats" />
           </div>
         </div>
-        <div style="margin-top: 35px">
+        <div>
           <GuildGames :games="guild.games" />
         </div>
         <div class="row">
-          <div style="width: 650px">
+          <div>
             <UniqueFeatures :unique_features="guild.unique_features" />
           </div>
           <div class="row column justify-between">
@@ -29,7 +29,7 @@
             </div>
             </div>
 
-            <div class="row justify-between" style="width: 250px">
+            <div class="row justify-between">
               <div class="text-h6">Listing</div>
               <div class="row">
                 <img src="../assets/image9.svg" class="q-mt-sm" alt="img">
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="col-3">
         <div style="position: absolute">
           <GuildInfo />
         </div>

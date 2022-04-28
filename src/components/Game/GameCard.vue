@@ -1,13 +1,16 @@
 <template>
   <div>
     <q-card bordered class="game-card q-pa-sm no-shadow">
-    <div class="row items-center justify-between">
+    <div class="row items-center justify-between q-mb-sm">
       <div class="row items-center">
         <q-icon name="lens" size="7px" color="secondary" class="q-mr-xs" />
         <div class="text-subtitle">Online</div>
       </div>
       <div>
-        <q-icon name="share" size="20px"/>
+        <q-fab color="primary" push icon="share" padding="xs" direction="left">
+          <q-fab-action padding="xs" color="negative" @click="onClick" icon="fa-brands fa-instagram" />
+          <q-fab-action padding="xs" color="primary" @click="onClick" icon="fa-brands fa-twitter" />
+        </q-fab>
       </div>
     </div>
     <div class="row column no-wrap items-center">
@@ -18,7 +21,11 @@
       class="bg-primary text-white"
       style="width: 220px"
     >
-      <q-tab name="message" icon="mail" />
+      <q-route-tab
+        icon="message"
+        to="/chat"
+        exact
+      />
       <q-tab name="favorite" icon="favorite" />
     </q-tabs>
     </div>
@@ -64,7 +71,7 @@ export default {
 
 <style lang="scss" scoped>
 .game-card{
+  max-width: 100%;
   width: 250px;
-  height: 520px;
 }
 </style>

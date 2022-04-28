@@ -7,10 +7,10 @@ const routes = [
       { path: '', component: () => import('pages/IndexPage.vue') },
       { path: 'player', component: () => import('src/pages/PlayerPage.vue') },
       { path: 'guild', component: () => import('src/pages/GuildPage.vue') },
-      { path: 'games', component: () => import('src/pages/GamePage.vue') }
+      { path: 'games', component: () => import('src/pages/GamePage.vue') },
+      { path: 'chat', component: () => import('src/pages/ChatPage.vue') }
     ]
   },
-
   // Always leave this as last one,
   // but you can also remove it
   {

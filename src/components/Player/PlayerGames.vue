@@ -33,8 +33,11 @@
 
 <q-dialog full-height full-width v-model="showModal">
   <q-card>
-  <q-card-section>
-    <div class="text-h5 row justify-center">Список всех игр</div>
+  <q-card-section class="row justify-center">
+    <q-space />
+    <div class="text-h5">Список всех игр</div>
+    <q-space />
+    <q-btn icon="close" flat round dense v-close-popup />
   </q-card-section>
   <q-card-section class="q-pt-none">
   <div class="row justify-between">
@@ -54,9 +57,6 @@
   </q-card>
   </div>
   </q-card-section>
-  <q-card-actions align="center">
-    <q-btn label="Close" color="primary" style="width: 20%" v-close-popup />
-  </q-card-actions>
   </q-card>
 </q-dialog>
 </div>
