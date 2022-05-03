@@ -1,25 +1,25 @@
 <template>
   <q-page>
     <div class="row no-wrap">
-      <div class="q-mt-sm col-9">
+      <div class="q-mt-sm col">
         <div>
           <GuildCarousel />
         </div>
-        <div class="q-mt-md">
-          <div class="row justify-between">
+        <div class="q-mt-md column">
+          <div class="row no-wrap q-gutter-sm">
             <q-btn label="500+ Active scholar" color="info" class="stats" />
             <q-btn label="$300 Scholar av." color="accent" class="stats" />
             <q-btn label="70/30 Profit sharing" color="secondary" class="stats" />
           </div>
         </div>
-        <div>
+        <div class="q-mt-lg col">
           <GuildGames :games="guild.games" />
         </div>
         <div class="row">
-          <div>
+          <div class="col-6">
             <UniqueFeatures :unique_features="guild.unique_features" />
           </div>
-          <div class="row column justify-between">
+          <div class="row column justify-between q-ml-xl">
             <div>
             <div class="text-h6 q-mb-md">Blockchain</div>
             <div class="row">
@@ -36,15 +36,15 @@
                 <img src="../assets/image10.svg" alt="img">
               </div>
             </div>
-            <div class="row items-center justify-between" style="width: 270px">
+            <div class="row items-center justify-between">
               <div class="text-subititle2">TOKEN TICKER</div>
               <q-chip label="$ NGG" color="info" text-color="white" size="15px" />
             </div>
           </div>
         </div>
       </div>
-      <div class="col-3">
-        <div style="position: absolute">
+      <div class="col-auto">
+        <div>
           <GuildInfo />
         </div>
       </div>
@@ -79,10 +79,8 @@ export default {
 
 <style lang="scss" scoped>
 .stats{
-  width: 250px;
-  height: 65px;
+  width: 32%;
   border-radius: 12px;
-  margin-right: 10px;
   font-size: 17px;
 }
 .background{

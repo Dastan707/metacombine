@@ -1,11 +1,11 @@
 <template>
   <q-page>
     <div class="row">
-      <div class="col col-md-auto">
+      <div class="col-auto">
         <PlayerInfo />
       </div>
       <div class="col q-ml-sm">
-        <div style="height: 290px"></div>
+        <div style="height: 40%"></div>
         <div>
         <PlayerGames :games="player.games" />
         </div>

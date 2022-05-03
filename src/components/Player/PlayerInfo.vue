@@ -7,8 +7,8 @@
     </div>
   <div>
     <q-fab color="primary" push icon="share" padding="xs" direction="left">
-      <q-fab-action padding="xs" color="negative" @click="onClick" icon="fa-brands fa-instagram" />
-      <q-fab-action padding="xs" color="primary" @click="onClick" icon="fa-brands fa-twitter" />
+      <q-fab-action padding="xs" color="negative" icon="fa-brands fa-instagram" />
+      <q-fab-action padding="xs" color="primary" icon="fa-brands fa-twitter" />
     </q-fab>
   </div>
   </div>

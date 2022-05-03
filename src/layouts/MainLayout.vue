@@ -19,9 +19,26 @@
           <router-link to="/guild">
             Guilds
           </router-link>
+          <router-link to="/billboard">
+            Billboard
+          </router-link>
         </div>
         </div>
-        <q-btn color="secondary" label="Register" />
+        <div v-if="isConnected">
+        <q-btn icon="notifications" flat round>
+          <q-badge color="red" floating>0</q-badge>
+        </q-btn>
+        <q-btn icon="account_circle" flat >
+          <q-menu>
+          <q-list>
+            <q-item @click="disconnectWallet" clickable v-close-popup>
+              <q-item-section>Logout</q-item-section>
+            </q-item>
+          </q-list>
+          </q-menu>
+        </q-btn>
+        </div>
+        <q-btn v-else to="/register" color="secondary" label="Register" />
       </q-toolbar>
     </q-header>
 
@@ -33,9 +50,20 @@
 
 <script>
 import { defineComponent } from 'vue'
+import { mapActions, mapGetters } from 'vuex'
 
 export default defineComponent({
-  name: 'MainLayout'
+  name: 'MainLayout',
+  computed: {
+    ...mapGetters({
+      isConnected: 'isConnected'
+    })
+  },
+  methods: {
+    ...mapActions({
+      disconnectWallet: 'disconnectWallet'
+    })
+  }
 })
 </script>
 

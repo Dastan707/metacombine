@@ -1,25 +1,34 @@
 <template>
 <div class="nft">
-  <div class="nft-wrapper row column q-mt-lg">
-  <div class="row justify-between items-center q-mb-md" style="width: 100%">
+  <div class="q-mt-lg">
+  <div class="row justify-between items-center q-mb-md">
     <div class="row">
       <div class="text-h6 q-mr-xs">Заработал NFT</div>
-      <q-btn @click="leftArrow" round color="primary" icon="arrow_back" size="10px" class="q-mr-xs" />
-      <q-btn @click="rightArrow" round color="primary" icon="arrow_forward" size="10px" />
+      <q-btn round color="primary" icon="arrow_back" size="10px" class="q-mr-xs prev-nft" />
+      <q-btn round color="primary" icon="arrow_forward" size="10px" class="next-nft" />
     </div>
     <div>
-      <q-btn color="secondary" label="Показать все" @click="openModal"/>
+      <q-btn color="secondary" label="Показать все" @click="showNftModal = !showNftModal"/>
     </div>
   </div>
 
-<div class="nft-list" :style="{ 'margin-left': '-' + (150 * currentSlideIndex) + 'px'}">
-<q-card class="nft-card no-shadow" v-for="nft in userNft" :key="nft.id">
-    <img style="width: 170px" src="../../assets/nft.svg" alt="nft">
-</q-card>
+<div>
+  <swiper
+      :modules="modules"
+      :slides-per-view="6"
+      :space-between="50"
+      :navigation="{prevEl: '.prev-nft', nextEl: '.next-nft'}"
+    >
+      <swiper-slide v-for="nft in userNft" :key="nft.id">
+        <q-card class="no-shadow">
+          <img src="../../assets/nft.svg" alt="nft">
+        </q-card>
+      </swiper-slide>
+    </swiper>
 </div>
 </div>
 
-<q-dialog full-height full-width v-model="showModal">
+<q-dialog full-height full-width v-model="showNftModal">
   <q-card>
   <q-card-section class="row justify-center">
     <q-space />
@@ -41,30 +50,22 @@
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation } from 'swiper'
+import 'swiper/scss'
 import { mapGetters } from 'vuex'
+import { ref } from 'vue'
 export default {
   name: 'NftList',
-  data () {
-    return {
-      currentSlideIndex: 0,
-      showModal: false
-    }
+  components: {
+    Swiper,
+    SwiperSlide
   },
-  methods: {
-    leftArrow () {
-      if (this.currentSlideIndex > 0) {
-        this.currentSlideIndex--
-      }
-    },
-    rightArrow () {
-      if (this.currentSlideIndex >= this.userNft.length - 1) {
-        console.log(this.currentSlideIndex)
-      } else {
-        this.currentSlideIndex++
-      }
-    },
-    openModal () {
-      this.showModal = true
+  setup () {
+    const showNftModal = ref(false)
+    return {
+      showNftModal,
+      modules: [Navigation]
     }
   },
   computed: {
@@ -76,19 +77,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nft{
-    &-wrapper{
-      overflow: hidden;
-    }
-    &-list{
-      display: flex;
-      transition: all ease .5s;
-    }
-    &-card{
-      width: 150px;
-      height: 150px;
-      margin-right: 35px;
-    }
-}
-
 </style>

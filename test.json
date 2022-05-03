@@ -131,6 +131,9 @@
       "unique_features": [
         {"type": "Market place", "url": "https://novaguild.io"},
         {"type": "Launchpad", "url": "https://novaguild.io"},
+        {"type": "Platform", "url": "https://novaguild.io"},
+        {"type": "Market place", "url": "https://novaguild.io"},
+        {"type": "Launchpad", "url": "https://novaguild.io"},
         {"type": "Platform", "url": "https://novaguild.io"}
       ],
       "languages": ["EN", "SPN", "RUS"],

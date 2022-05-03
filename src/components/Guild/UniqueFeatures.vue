@@ -1,62 +1,65 @@
 <template>
-  <div class="features">
-    <div class="row">
+  <div>
+    <div class="row q-mb-md">
       <div class="text-h6 q-mr-xs">Unique Features</div>
-      <q-btn @click="leftArrow" round color="primary" icon="arrow_back" size="10px" class="q-mr-xs" />
-      <q-btn @click="rightArrow" round color="primary" icon="arrow_forward" size="10px" />
+      <q-btn round color="primary" icon="arrow_back" size="10px" class="q-mr-xs prev-btn" />
+      <q-btn round color="primary" icon="arrow_forward" size="10px" class="next-btn" />
     </div>
-    <div class="row features-list" :style="{ 'margin-left': '-' + (150 * currentSlideFeatures) + 'px'}">
-    <q-card v-for="feature in unique_features" :key="feature.id" flat bordered class="my-card row column items-center q-mr-md q-mt-md">
-
-      <q-card-section class="q-pt-md">
-        <div class="text-h6">{{feature.type}}</div>
-      </q-card-section>
-
-      <q-card-section class="q-mt-md">
-        <q-btn outline label="Learn more" color="primary" size="11px"/>
-      </q-card-section>
-    </q-card>
+    <div>
+    <swiper
+      :modules="modules"
+      :slides-per-view="3"
+      :space-between="20"
+      :navigation="{prevEl: '.prev-btn', nextEl: '.next-btn'}"
+      class="q-pa-sm"
+    >
+      <swiper-slide v-for="feature in unique_features" :key="feature.id">
+        <q-card flat bordered class="my-card row items-center q-mt-md">
+          <div class="features-text column justify-center items-center">
+            <div class="text-h6">{{feature.type}}</div>
+            <q-btn class="q-mt-md" outline label="Learn more" color="primary" size="11px"/>
+          </div>
+        </q-card>
+      </swiper-slide>
+    </swiper>
     </div>
   </div>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation } from 'swiper'
+import 'swiper/scss'
+
 export default {
   name: 'UniqueFeatures',
-  props: ['unique_features'],
-  data () {
-    return {
-      currentSlideFeatures: 0
-    }
+  components: {
+    Swiper,
+    SwiperSlide
   },
-  methods: {
-    leftArrow () {
-      if (this.currentSlideFeatures > 0) {
-        this.currentSlideFeatures--
-      }
-    },
-    rightArrow () {
-      if (this.currentSlideFeatures >= this.unique_features.length - 1) {
-        console.log(this.currentSlideFeatures)
-      } else {
-        this.currentSlideFeatures++
-      }
+  props: ['unique_features'],
+  setup () {
+    return {
+      modules: [Navigation]
     }
   }
 }
 </script>
-
 <style lang="scss" scoped>
 .my-card{
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  padding-bottom: 100%;
   border-radius: 10px;
   background: rgb(228, 228, 228);
 }
-.features{
-  overflow: hidden;
-  &-list{
-    transition: all ease .5s;
-  }
+.features-text{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.swiper{
+  padding: 5px;
 }
 </style>

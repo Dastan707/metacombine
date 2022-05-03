@@ -8,7 +8,9 @@ const routes = [
       { path: 'player', component: () => import('src/pages/PlayerPage.vue') },
       { path: 'guild', component: () => import('src/pages/GuildPage.vue') },
       { path: 'games', component: () => import('src/pages/GamePage.vue') },
-      { path: 'chat', component: () => import('src/pages/ChatPage.vue') }
+      { path: 'chat', component: () => import('src/pages/ChatPage.vue') },
+      { path: 'billboard', component: () => import('src/pages/BillboardPage.vue') },
+      { path: 'register', component: () => import('src/pages/RegisterPage.vue') }
     ]
   },
   // Always leave this as last one,

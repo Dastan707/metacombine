@@ -83,6 +83,7 @@ export default {
 
 <style lang="scss" scoped>
 .guild-card{
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 </style>
